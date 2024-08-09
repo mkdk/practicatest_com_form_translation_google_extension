@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Practicatest translator",
+  "version": "1.0",
+  "description": "Add the translation button into forms on practicatest.com",
+    "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/translate.js"],
+      "matches": [
+        "https://practicatest.com/*"
+      ]
+    }
+  ]
+}
